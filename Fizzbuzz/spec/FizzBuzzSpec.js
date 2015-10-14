@@ -10,6 +10,6 @@ describe("FizzBuzz", function() {
   });
 
   it("should return 2 for input '2'", function() {
-    expect(fizzbuzz.get(2).toBe(2));
+    expect(fizzbuzz.get(2)).toBe(2);
   })
 });
