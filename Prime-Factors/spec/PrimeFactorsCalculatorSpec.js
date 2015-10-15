@@ -13,4 +13,8 @@ describe("Prime Factors Calculator", function() {
     expect(primeFactorsCalculator.getPrimeFactors(2)).toEqual([1, 2]);
   });
 
+  it("should return [1, 3] for 3", function () {
+    expect(primeFactorsCalculator.getPrimeFactors(3)).toEqual([1, 3]);
+  });
+
 });
