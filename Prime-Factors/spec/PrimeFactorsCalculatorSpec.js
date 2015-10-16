@@ -23,6 +23,10 @@ describe("Prime Factors Calculator", function() {
 
   it("should return [] for 5", function() {
     expect(primeFactorsCalculator.getPrimeFactors(5)).toEqual([]);
+  });
+
+  it("should return [2, 3] for 6", function() {
+    expect(primeFactorsCalculator.getPrimeFactors(6)).toEqual([2, 3]);
   })
 
 });
