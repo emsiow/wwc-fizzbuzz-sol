@@ -20,5 +20,9 @@ describe("Prime Factors Calculator", function() {
   it("should return [2] for 4", function() {
     expect(primeFactorsCalculator.getPrimeFactors(4)).toEqual([2]);
   });
-  
+
+  it("should return [] for 5", function() {
+    expect(primeFactorsCalculator.getPrimeFactors(5)).toEqual([]);
+  })
+
 });
