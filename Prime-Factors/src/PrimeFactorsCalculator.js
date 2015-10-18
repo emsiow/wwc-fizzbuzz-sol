@@ -1,18 +1,13 @@
 function PrimeFactorsCalculator() {
   this.getPrimeFactors = function(number) {
     primeFactors = [];
-    while (number >= 1) {
-      if (number % 2 === 0) {
-        primeFactors.push(2);
-        number = number/2;
-      } else if (number % 3 === 0) {
-        primeFactors.push(3);
-        number = number/3;
-      } else if (number % 5 === 0) {
-        primeFactors.push(5);
-        number = number/5;
+    divisor = 2;
+    while (number !== 1) {
+      if (number % divisor == 0) {
+        primeFactors.push(divisor);
+        number = number / divisor;
       } else {
-        number = 0;
+        divisor += 1;
       }
     }
     return primeFactors;
