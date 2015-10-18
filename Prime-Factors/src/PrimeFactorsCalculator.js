@@ -8,6 +8,9 @@ function PrimeFactorsCalculator() {
       } else if (number % 3 === 0) {
         primeFactors.push(3);
         number = number/3;
+      } else if (number % 5 === 0) {
+        primeFactors.push(5);
+        number = number/5;
       } else {
         number = 0;
       }
