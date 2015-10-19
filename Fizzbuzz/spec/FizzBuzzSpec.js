@@ -29,4 +29,8 @@ describe("FizzBuzz", function() {
     expect(fizzbuzz.get(10)).toBe('Buzz');
   });
 
+  it("returns 'FizzBuzz' for input '15'", function() {
+    expect(fizzbuzz.get(15)).toBe('FizzBuzz');
+  });
+
 });
