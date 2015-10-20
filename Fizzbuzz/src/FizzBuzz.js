@@ -1,12 +1,20 @@
 function FizzBuzz() {
   this.get = function(number) {
-    if ((number % 3 === 0) && (number % 5 === 0)) {
+    if (divisibleByThree(number) && divisibleByFive(number)) {
       return "FizzBuzz";
-    } else if (number % 3 === 0) {
+    } else if (divisibleByThree(number)) {
       return "Fizz";
-    } else if (number % 5 === 0) {
+    } else if (divisibleByFive(number)) {
       return "Buzz";
     }
     return number;
   }
+}
+
+function divisibleByThree(number) {
+  return (number % 3 === 0);
+}
+
+function divisibleByFive(number) {
+  return (number % 5 === 0);
 }
