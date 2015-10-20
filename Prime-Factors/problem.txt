@@ -1,3 +1,0 @@
-For each number n, we want to have a list of all the prime number that are it's factors.
-
-Example: for 12 we should have (2,2,3)
