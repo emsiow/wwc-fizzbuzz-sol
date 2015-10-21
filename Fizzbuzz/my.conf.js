@@ -10,6 +10,7 @@ module.exports = function(config) {
     singleRun: true,
     plugins: ['karma-jasmine', 'karma-coverage', 'karma-phantomjs-launcher'],
     reporters: ['progress', 'coverage'],
-    preprocessors: { '*.js': ['coverage'] }
+    preprocessors: { '*.js': ['coverage']},
+    coverageReporter: { type: 'text' }
   });
 };
